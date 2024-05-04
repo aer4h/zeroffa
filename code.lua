@@ -32,13 +32,10 @@ local UICorner_8 = Instance.new("UICorner")
 local Food = Instance.new("TextButton")
 local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local UICorner_9 = Instance.new("UICorner")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
 local Lock = Instance.new("TextButton")
-local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 local UICorner_10 = Instance.new("UICorner")
-local Terminate = Instance.new("TextButton")
-local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
-local UICorner_11 = Instance.new("UICorner")
-
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 
 --Properties:
 
@@ -294,34 +291,9 @@ UITextSizeConstraint_9.MaxTextSize = 9
 UICorner_10.CornerRadius = UDim.new(0,20)
 UICorner_10.Parent = Lock
 
-Terminate.Name = "Terminate"
-Terminate.Parent = Main
-Terminate.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-Terminate.BackgroundTransparency = 0.300
-Terminate.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Terminate.BorderSizePixel = 0
-Terminate.Position = UDim2.new(0.780301571, 0, -0.0503081083, 0)
-Terminate.Size = UDim2.new(0.363604397, 0, 0.0768520311, 0)
-Terminate.ZIndex = 10
-Terminate.Font = Enum.Font.Unknown
-Terminate.Text = "Termimate (Close) The UI"
-Terminate.TextColor3 = Color3.fromRGB(255, 255, 255)
-Terminate.TextScaled = true
-Terminate.TextSize = 11.000
-Terminate.TextWrapped = true
-script.Parent.MouseButton1Down:Connect(function()
-	script.Parent.Parent.Frame.Visible = false
-end)
-
-UITextSizeConstraint_10.Parent = Terminate
-UITextSizeConstraint_10.MaxTextSize = 11
-
-UICorner_11.CornerRadius = UDim.new(0, 20)
-UICorner_11.Parent = Terminate
-
 -- Scripts:
 
-local function TTIR_fake_script() -- ZeroDelay.Drag 
+local function TYQP_fake_script() -- ZeroDelay.Drag 
 	local script = Instance.new('LocalScript', ZeroDelay)
 
 	frame = script.Parent.Main
@@ -329,4 +301,4 @@ local function TTIR_fake_script() -- ZeroDelay.Drag
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(TTIR_fake_script)()
+coroutine.wrap(TYQP_fake_script)()
