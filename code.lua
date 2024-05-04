@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ZeroDelay = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -37,7 +32,6 @@ local Lock = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
 
---Properties:
 
 ZeroDelay.Name = "Zero Delay"
 ZeroDelay.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -69,7 +63,7 @@ GoTo1.TextScaled = true
 GoTo1.TextSize = 11.000
 GoTo1.TextWrapped = true
 GoTo1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/print.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/g.lua'),true))()
 end)
 
 UITextSizeConstraint.Parent = GoTo1
@@ -121,7 +115,7 @@ GoTo2.TextScaled = true
 GoTo2.TextSize = 11.000
 GoTo2.TextWrapped = true
 GoTo2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/g.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/print.lua'),true))()
 end)
 
 UITextSizeConstraint_2.Parent = GoTo2
