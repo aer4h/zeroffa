@@ -57,13 +57,13 @@ GoTo1.BorderSizePixel = 0
 GoTo1.Position = UDim2.new(0.0423087515, 0, 0.198546007, 0)
 GoTo1.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
 GoTo1.Font = Enum.Font.Unknown
-GoTo1.Text = "Go To [NEW] PVP Area"
+GoTo1.Text = "Go To PVP Area"
 GoTo1.TextColor3 = Color3.fromRGB(255, 255, 255)
 GoTo1.TextScaled = true
 GoTo1.TextSize = 11.000
 GoTo1.TextWrapped = true
 GoTo1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/g.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/pvp.lua'),true))()
 end)
 
 UITextSizeConstraint.Parent = GoTo1
@@ -138,7 +138,7 @@ GoTo3.TextScaled = true
 GoTo3.TextSize = 11.000
 GoTo3.TextWrapped = true
 GoTo3.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/rocket.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/hide.lua'),true))()
 end)
 
 UITextSizeConstraint_3.Parent = GoTo3
@@ -253,7 +253,7 @@ Food.TextScaled = true
 Food.TextSize = 11.000
 Food.TextWrapped = true
 Food.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/food1.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/burger.lua'),true))()
 end)
 
 UITextSizeConstraint_8.Parent = Food
