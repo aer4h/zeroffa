@@ -109,13 +109,13 @@ GoTo2.BorderSizePixel = 0
 GoTo2.Position = UDim2.new(0.356774151, 0, 0.198546007, 0)
 GoTo2.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
 GoTo2.Font = Enum.Font.Unknown
-GoTo2.Text = "Go To Park"
+GoTo2.Text = "Food TP"
 GoTo2.TextColor3 = Color3.fromRGB(255, 255, 255)
 GoTo2.TextScaled = true
 GoTo2.TextSize = 11.000
 GoTo2.TextWrapped = true
 GoTo2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/print.lua'),true))()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/burger.lua'),true))()
 end)
 
 UITextSizeConstraint_2.Parent = GoTo2
