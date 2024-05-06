@@ -1,91 +1,37 @@
-local ZeroDelay = Instance.new("ScreenGui")
+local Cat = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local GoTo1 = Instance.new("TextButton")
-local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
-local UICorner_2 = Instance.new("UICorner")
-local Title = Instance.new("TextLabel")
 local Pattern = Instance.new("ImageLabel")
-local GoTo2 = Instance.new("TextButton")
-local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
-local UICorner_3 = Instance.new("UICorner")
-local GoTo3 = Instance.new("TextButton")
-local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
-local UICorner_4 = Instance.new("UICorner")
+local Title = Instance.new("Frame")
+local Title_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local Tab = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local CTRL = Instance.new("TextButton")
-local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
-local UICorner_5 = Instance.new("UICorner")
-local ESP = Instance.new("TextButton")
-local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
-local UICorner_6 = Instance.new("UICorner")
-local AntiAfk = Instance.new("TextButton")
-local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
-local UICorner_7 = Instance.new("UICorner")
-local Death = Instance.new("TextButton")
-local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
-local UICorner_8 = Instance.new("UICorner")
-local Food = Instance.new("TextButton")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
-local UICorner_9 = Instance.new("UICorner")
-local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UICorner_3 = Instance.new("UICorner")
+local Box = Instance.new("TextButton")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UICorner_4 = Instance.new("UICorner")
 local Lock = Instance.new("TextButton")
-local UICorner_10 = Instance.new("UICorner")
-local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local UICorner_5 = Instance.new("UICorner")
 
 
-ZeroDelay.Name = "Zero Delay"
-ZeroDelay.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ZeroDelay.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Cat.Name = "Cat"
+Cat.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Cat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
-Main.Parent = ZeroDelay
+Main.Parent = Cat
 Main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Main.BackgroundTransparency = 0.200
 Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.431468964, 0, 0.317606449, 0)
-Main.Size = UDim2.new(0, 356, 0, 258)
+Main.Position = UDim2.new(0.562885702, 0, 0.35327962, 0)
+Main.Size = UDim2.new(0, 379, 0, 173)
 
-UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = Main
-
-GoTo1.Name = "GoTo1"
-GoTo1.Parent = Main
-GoTo1.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-GoTo1.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GoTo1.BorderSizePixel = 0
-GoTo1.Position = UDim2.new(0.0423087515, 0, 0.198546007, 0)
-GoTo1.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
-GoTo1.Font = Enum.Font.Unknown
-GoTo1.Text = "Go To PVP Area"
-GoTo1.TextColor3 = Color3.fromRGB(255, 255, 255)
-GoTo1.TextScaled = true
-GoTo1.TextSize = 11.000
-GoTo1.TextWrapped = true
-GoTo1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/pvp.lua'),true))()
-end)
-
-UITextSizeConstraint.Parent = GoTo1
-UITextSizeConstraint.MaxTextSize = 11
-
-UICorner_2.CornerRadius = UDim.new(0, 20)
-UICorner_2.Parent = GoTo1
-
-Title.Name = "Title"
-Title.Parent = Main
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Title.BorderSizePixel = 0
-Title.Position = UDim2.new(-0.00293260207, 0, 0.0282025002, 0)
-Title.Size = UDim2.new(0, 225, 0, 19)
-Title.Font = Enum.Font.Unknown
-Title.Text = "Zero Delay FFA - by uico"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextScaled = true
-Title.TextSize = 14.000
-Title.TextWrapped = true
 
 Pattern.Name = "Pattern"
 Pattern.Parent = Main
@@ -101,59 +47,56 @@ Pattern.ScaleType = Enum.ScaleType.Tile
 Pattern.SliceCenter = Rect.new(10, 10, 118, 118)
 Pattern.TileSize = UDim2.new(0, 90, 0, 90)
 
-GoTo2.Name = "GoTo2"
-GoTo2.Parent = Main
-GoTo2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-GoTo2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GoTo2.BorderSizePixel = 0
-GoTo2.Position = UDim2.new(0.356774151, 0, 0.198546007, 0)
-GoTo2.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
-GoTo2.Font = Enum.Font.Unknown
-GoTo2.Text = "Food TP"
-GoTo2.TextColor3 = Color3.fromRGB(255, 255, 255)
-GoTo2.TextScaled = true
-GoTo2.TextSize = 11.000
-GoTo2.TextWrapped = true
-GoTo2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/burger.lua'),true))()
-end)
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 379, 0, 23)
 
-UITextSizeConstraint_2.Parent = GoTo2
-UITextSizeConstraint_2.MaxTextSize = 11
+Title_2.Name = "Title"
+Title_2.Parent = Title
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.BorderSizePixel = 0
+Title_2.Position = UDim2.new(0.200233638, 0, 0.158638328, 0)
+Title_2.Size = UDim2.new(0, 225, 0, 29)
+Title_2.Font = Enum.Font.Unknown
+Title_2.Text = "Lock"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
 
-UICorner_3.CornerRadius = UDim.new(0, 20)
-UICorner_3.Parent = GoTo2
 
-GoTo3.Name = "GoTo3"
-GoTo3.Parent = Main
-GoTo3.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-GoTo3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GoTo3.BorderSizePixel = 0
-GoTo3.Position = UDim2.new(0.681721747, 0, 0.198546007, 0)
-GoTo3.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
-GoTo3.Font = Enum.Font.Unknown
-GoTo3.Text = "Escape from enemies"
-GoTo3.TextColor3 = Color3.fromRGB(255, 255, 255)
-GoTo3.TextScaled = true
-GoTo3.TextSize = 11.000
-GoTo3.TextWrapped = true
-GoTo3.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/hide.lua'),true))()
-end)
+ImageLabel.Parent = Title
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.0761986077, 0, 4.0335083, 0)
+ImageLabel.Size = UDim2.new(0, 315, 0, 80)
+ImageLabel.Image = "rbxassetid://17403766066"
 
-UITextSizeConstraint_3.Parent = GoTo3
-UITextSizeConstraint_3.MaxTextSize = 11
+Tab.Name = "Tab"
+Tab.Parent = Main
+Tab.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Tab.BackgroundTransparency = 1.000
+Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tab.BorderSizePixel = 0
+Tab.Position = UDim2.new(0.0184696577, 0, 0.202312142, 0)
+Tab.Size = UDim2.new(0, 364, 0, 50)
 
-UICorner_4.CornerRadius = UDim.new(0, 20)
-UICorner_4.Parent = GoTo3
+UICorner_2.CornerRadius = UDim.new(0, 18)
+UICorner_2.Parent = Tab
 
 CTRL.Name = "CTRL"
-CTRL.Parent = Main
-CTRL.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+CTRL.Parent = Tab
+CTRL.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 CTRL.BorderColor3 = Color3.fromRGB(0, 0, 0)
 CTRL.BorderSizePixel = 0
-CTRL.Position = UDim2.new(0.042308677, 0, 0.356368661, 0)
-CTRL.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
+CTRL.Position = UDim2.new(0.046857059, 0, 0.214746699, 0)
+CTRL.Size = UDim2.new(0.266215354, 0, 0.55520761, 0)
 CTRL.Font = Enum.Font.Unknown
 CTRL.Text = "CTRL to TP"
 CTRL.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -164,111 +107,40 @@ CTRL.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://pastebin.com/raw/s9RU0AeX'),true))()
 end)
 
-UITextSizeConstraint_4.Parent = CTRL
-UITextSizeConstraint_4.MaxTextSize = 11
 
-UICorner_5.CornerRadius = UDim.new(0, 20)
-UICorner_5.Parent = CTRL
+UITextSizeConstraint.Parent = CTRL
+UITextSizeConstraint.MaxTextSize = 11
 
-ESP.Name = "ESP"
-ESP.Parent = Main
-ESP.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-ESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ESP.BorderSizePixel = 0
-ESP.Position = UDim2.new(0.363063514, 0, 0.356368661, 0)
-ESP.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
-ESP.Font = Enum.Font.Unknown
-ESP.Text = "ESP"
-ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
-ESP.TextScaled = true
-ESP.TextSize = 11.000
-ESP.TextWrapped = true
-ESP.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/2hi.lua'),true))()
-end)
+UICorner_3.CornerRadius = UDim.new(0, 20)
+UICorner_3.Parent = CTRL
 
-UITextSizeConstraint_5.Parent = ESP
-UITextSizeConstraint_5.MaxTextSize = 11
+Box.Name = "Box"
+Box.Parent = Tab
+Box.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Box.BorderSizePixel = 0
+Box.Position = UDim2.new(0.360311329, 0, 0.214750975, 0)
+Box.Size = UDim2.new(0.266215384, 0, 0.555208743, 0)
+Box.Font = Enum.Font.Unknown
+Box.Text = "Later(LATER)"
+Box.TextColor3 = Color3.fromRGB(255, 255, 255)
+Box.TextScaled = true
+Box.TextSize = 11.000
+Box.TextWrapped = true
 
-UICorner_6.CornerRadius = UDim.new(0, 20)
-UICorner_6.Parent = ESP
+UITextSizeConstraint_2.Parent = Box
+UITextSizeConstraint_2.MaxTextSize = 11
 
-AntiAfk.Name = "AntiAfk"
-AntiAfk.Parent = Main
-AntiAfk.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-AntiAfk.BorderColor3 = Color3.fromRGB(0, 0, 0)
-AntiAfk.BorderSizePixel = 0
-AntiAfk.Position = UDim2.new(0.67954278, 0, 0.356368661, 0)
-AntiAfk.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
-AntiAfk.Font = Enum.Font.Unknown
-AntiAfk.Text = "Anti Afk"
-AntiAfk.TextColor3 = Color3.fromRGB(255, 255, 255)
-AntiAfk.TextScaled = true
-AntiAfk.TextSize = 11.000
-AntiAfk.TextWrapped = true
-AntiAfk.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/QyVFh8Vh'),true))()
-end)
-
-UITextSizeConstraint_6.Parent = AntiAfk
-UITextSizeConstraint_6.MaxTextSize = 11
-
-UICorner_7.CornerRadius = UDim.new(0, 20)
-UICorner_7.Parent = AntiAfk
-
-Death.Name = "Death"
-Death.Parent = Main
-Death.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Death.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Death.BorderSizePixel = 0
-Death.Position = UDim2.new(0.0400298052, 0, 0.524876893, 0)
-Death.Size = UDim2.new(0.272415459, 0, 0.111735873, 0)
-Death.Font = Enum.Font.Unknown
-Death.Text = "Death."
-Death.TextColor3 = Color3.fromRGB(255, 255, 255)
-Death.TextScaled = true
-Death.TextSize = 11.000
-Death.TextWrapped = true
-Death.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://pastebin.com/raw/EveVhTU9'),true))()
-end)
-
-UITextSizeConstraint_7.Parent = Death
-UITextSizeConstraint_7.MaxTextSize = 11
-
-UICorner_8.CornerRadius = UDim.new(0, 20)
-UICorner_8.Parent = Death
-
-Food.Name = "Food"
-Food.Parent = Main
-Food.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
-Food.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Food.BorderSizePixel = 0
-Food.Position = UDim2.new(0.358953059, 0, 0.52333504, 0)
-Food.Size = UDim2.new(0.276525646, 0, 0.11173588, 0)
-Food.Font = Enum.Font.Unknown
-Food.Text = "Food TP"
-Food.TextColor3 = Color3.fromRGB(255, 255, 255)
-Food.TextScaled = true
-Food.TextSize = 11.000
-Food.TextWrapped = true
-Food.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/zeroffa/main/burger.lua'),true))()
-end)
-
-UITextSizeConstraint_8.Parent = Food
-UITextSizeConstraint_8.MaxTextSize = 11
-
-UICorner_9.CornerRadius = UDim.new(0, 20)
-UICorner_9.Parent = Food
+UICorner_4.CornerRadius = UDim.new(0, 20)
+UICorner_4.Parent = Box
 
 Lock.Name = "Lock"
-Lock.Parent = Main
-Lock.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Lock.Parent = Tab
+Lock.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 Lock.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Lock.BorderSizePixel = 0
-Lock.Position = UDim2.new(0.358953059, 0, 0.52333504, 0)
-Lock.Size = UDim2.new(0.276525646, 0, 0.11173588, 0)
+Lock.Position = UDim2.new(0.682956219, 0, 0.202622071, 0)
+Lock.Size = UDim2.new(0.270232141, 0, 0.567335069, 0)
 Lock.Font = Enum.Font.Unknown
 Lock.Text = "Lock (Z)"
 Lock.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -279,20 +151,21 @@ Lock.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zackmackburnger/2024-exe-test/main/freeopensourceaimbot.lua'),true))()
 end)
 
-UITextSizeConstraint_9.Parent = Lock
-UITextSizeConstraint_9.MaxTextSize = 9
 
-UICorner_10.CornerRadius = UDim.new(0,20)
-UICorner_10.Parent = Lock
+UITextSizeConstraint_3.Parent = Lock
+UITextSizeConstraint_3.MaxTextSize = 11
+
+UICorner_5.CornerRadius = UDim.new(0, 20)
+UICorner_5.Parent = Lock
 
 -- Scripts:
 
-local function TYQP_fake_script() -- ZeroDelay.Drag 
-	local script = Instance.new('LocalScript', ZeroDelay)
+local function LBWEE_fake_script() -- Cat.Drag 
+	local script = Instance.new('LocalScript', Cat)
 
 	frame = script.Parent.Main
 	frame.Draggable = true
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(TYQP_fake_script)()
+coroutine.wrap(LBWEE_fake_script)()
