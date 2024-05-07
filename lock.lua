@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local nigga = Instance.new("ScreenGui")
 local nigger = Instance.new("Frame")
 local niggaer = Instance.new("TextLabel")
@@ -14,8 +9,6 @@ local NIGGER = Instance.new("TextLabel")
 local NIGGER_2 = Instance.new("TextLabel")
 local NIGGER_3 = Instance.new("TextLabel")
 local NIGGER_4 = Instance.new("TextBox")
-
---Properties:
 
 nigga.Name = "nigga"
 nigga.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
